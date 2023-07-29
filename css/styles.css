@@ -83,6 +83,24 @@ img {
 .page-header {
   border-bottom: 1px solid var(--cornflower);
 }
+
+.current {
+  position: relative;
+  color: var(--oceancolor);
+}
+
+.current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  border: 2px solid var(--oceancolor);
+  background-color: var(--oceancolor);
+}
+
 /*checked*/
 .menu,
 .navigation,
