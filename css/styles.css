@@ -418,7 +418,7 @@ img {
 
 .social-team .link:hover,
 .social-team .link:focus {
-  background-color: var(--oceancolor);
+  background-color: var(--green);
 }
 
 /*checked*/
