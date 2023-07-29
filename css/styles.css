@@ -472,7 +472,7 @@ img {
   height: 100%;
   width: 100%;
   padding: 40px;
-  font-size: 16px;
+  font-size: 18px;
   color: var(--whitecolor);
   background-color: var(--irisoverlay);
   transform: translateY(100%);
