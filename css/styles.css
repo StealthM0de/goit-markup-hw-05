@@ -10,6 +10,7 @@
   --cloudcolor: #f4f4fd;
   --cornflower: #e7e9fc;
   --green: #31d0aa;
+  --irisoverlay: #4d5ae5e4;
 }
 
 /*css reset*/
@@ -458,6 +459,28 @@ img {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+}
+
+.project-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-text {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+  font-size: 16px;
+  color: var(--whitecolor);
+  background-color: var(--irisoverlay);
+  transform: translateY(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.project-card:hover .project-text {
+  transform: translateY(0);
 }
 
 .projects .project-card:hover,
