@@ -332,6 +332,7 @@ img {
   height: 112px;
 
   border-radius: 4px;
+  margin-bottom: 8px;
 
   display: flex;
   align-items: center;
@@ -488,7 +489,7 @@ img {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-overlay {
+.projects .description {
   position: relative;
   overflow: hidden;
 }
@@ -506,7 +507,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-card:hover .project-text {
+.project-card:hover .overlay .project-text {
   transform: translateY(0);
 }
 
@@ -644,6 +645,7 @@ img {
   left: 50%;
   min-width: 408px;
   min-height: 584px;
+  border-radius: 4px;
   background-color: var(--dairywhite);
 
   transform: translate(-50%, -50%) scale(1);
@@ -667,13 +669,14 @@ img {
   width: 30px;
   height: 30px;
 
-  background-color: var(--dairywhite);
+  background-color: var(--cornflower);
   color: var(--navcolor);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   cursor: pointer;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-icon {
@@ -682,7 +685,8 @@ img {
 
 .modal-close:hover,
 .modal-close:focus {
-  color: var(--oceancolor);
+  color: var(--whitecolor);
+  background-color: var(--oceancolor);
 }
 
 .is-hidden {
